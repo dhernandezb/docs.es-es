@@ -35,7 +35,7 @@ En Visual Basic, puede pasar un argumento a un procedimiento *por valor* o *por 
 ## <a name="choice-of-passing-mechanism"></a>Elección del mecanismo para pasar argumentos  
  Debe elegir el mecanismo de paso cuidadosamente para cada argumento.  
   
--   **Protección**. Al elegir entre los mecanismos de dos pasar, el criterio más importante es la exposición de la llamada a las variables a cambiar. La ventaja de pasar un argumento `ByRef` es que el procedimiento puede devolver un valor para el código que realiza la llamada a través de ese argumento. La ventaja de pasar un argumento `ByVal` es que evita que una variable que se está cambiando mediante el procedimiento.  
+-   **Protección**. Al elegir entre uno de los 2 mecanismos a pasar, el criterio más importante es la exposición de la llamada a las variables a cambiar. La ventaja de pasar un argumento `ByRef` es que el procedimiento puede devolver un valor para el código que realiza la llamada a través de ese argumento. La ventaja de pasar un argumento `ByVal` es que evita que una variable se cambie mediante el procedimiento.  
   
 -   **Rendimiento**. Aunque el mecanismo de paso puede afectar al rendimiento del código, la diferencia es suele ser insignificante. Una excepción a esto es un tipo de valor que se pasa `ByVal`. En este caso, Visual Basic copia el contenido de todos los datos del argumento. Por lo tanto, para un tipo de valor grande, como una estructura, puede ser más eficaz para pasarlo `ByRef`.  
   
