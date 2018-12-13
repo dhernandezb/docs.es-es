@@ -22,9 +22,9 @@ ms.lasthandoff: 05/04/2018
 ms.locfileid: "33651082"
 ---
 # <a name="how-to-force-an-argument-to-be-passed-by-value-visual-basic"></a>Cómo: Forzar un argumento para que pase como un valor (Visual Basic)
-La declaración de procedimiento determina el mecanismo de paso. Si se declara un parámetro [ByRef](../../../../visual-basic/language-reference/modifiers/byref.md), Visual Basic espera pasar el argumento correspondiente por referencia. Esto permite que el procedimiento cambiar el valor del elemento de programación subyacente del argumento en el código de llamada. Si desea proteger el elemento subyacente frente a estos cambios, puede invalidar el `ByRef` llame al mecanismo de paso en el procedimiento, incluya el nombre del argumento paréntesis. Estos paréntesis son además de los paréntesis que encierran la lista de argumentos en la llamada.  
+La declaración de procedimiento determina el mecanismo de paso. Si se declara un parámetro [ByRef](../../../../visual-basic/language-reference/modifiers/byref.md), Visual Basic espera pasar el argumento correspondiente por referencia. Esto permite que el procedimiento cambie el valor del elemento de programación subyacente del argumento en el código de llamada. Si desea proteger el elemento subyacente frente a estos cambios, puede invalidar el `ByRef` llamando al mecanismo de paso en el procedimiento, incluya el nombre del argumento entre paréntesis. Estos paréntesis son además los paréntesis que encierran la lista de argumentos en la llamada.  
   
- El código de llamada no puede reemplazar un [ByVal](../../../../visual-basic/language-reference/modifiers/byval.md) mecanismo.  
+ El código de llamada no puede reemplazar un mecanismo [ByVal](../../../../visual-basic/language-reference/modifiers/byval.md) .  
   
 ### <a name="to-force-an-argument-to-be-passed-by-value"></a>Para forzar un argumento para pasar por valor  
   
@@ -33,7 +33,7 @@ La declaración de procedimiento determina el mecanismo de paso. Si se declara u
 -   Si el parámetro correspondiente está declarado `ByRef` en el procedimiento, incluya el argumento entre paréntesis en la llamada a procedimiento.  
   
 ## <a name="example"></a>Ejemplo  
- El siguiente ejemplo se reemplaza un `ByRef` declaración de parámetro. En la llamada que obliga a `ByVal`, tenga en cuenta los dos niveles de paréntesis.  
+ El siguiente ejemplo se reemplaza un parámetro declarado `ByRef` . En la llamada que obliga a `ByVal`, tenga en cuenta los dos niveles de paréntesis.  
   
  [!code-vb[VbVbcnProcedures#39](./codesnippet/VisualBasic/how-to-force-an-argument-to-be-passed-by-value_1.vb)]  
   
